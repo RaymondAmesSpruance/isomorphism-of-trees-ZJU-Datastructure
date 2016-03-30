@@ -85,6 +85,7 @@ bool isomophism(int t1root, int t2root)
 					|| 
 					( isomophism(t1[t1root].Left, t2[t2root].Left) && isomophism(t1[t1root].Right, t2[t2root].Right) )
 				);
+	else return false;
 }
 int main()
 {
